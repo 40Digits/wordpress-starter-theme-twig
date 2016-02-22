@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>{{ function('wp_title', '&raquo;', 'true', 'right') }}</title>
+
+  <script>
+    // Place Google Analytics code here - note that any <noscript> iframes
+    // will break <head>, so include it after body if you need that snippet
+
+    // Set up site configuration
+    window.config = window.config || {};
+
+    // The base URL for the WordPress theme
+    window.config.baseUrl = "{{ bloginfo('url') }}";
+
+    // Empty default Gravity Forms spinner function
+    var gformInitSpinner = function() {};
+  </script>
+
+  {% include 'theme-meta.twig' %}
+
+  {{wp_head}}
+</head>
+<body {{ function('body_class') }} id="{{ function('get_template_name') }}">

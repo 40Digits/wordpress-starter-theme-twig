@@ -1,4 +1,4 @@
-# Wordpress Starter Theme
+# Wordpress Starter Theme + Twig
 
 Built to work within the needs of 40Digits, our theme functions as a starting point for our projects.
 
@@ -8,6 +8,7 @@ Comes included with:
 - Manageable Wordpress Functions
 - Core necessities to get the site running, up to you on what is and isn't needed.
 - Environment Management
+- [Twig](http://twig.sensiolabs.org/) templating with [Timber](https://github.com/jarednova/timber).
 
 For additional [useful functions](http://wiki.40digits.net/resources/wp-functions-to-take-advantage-of/) to take advantage of, read our Wiki article.
 
@@ -15,6 +16,12 @@ For additional [useful functions](http://wiki.40digits.net/resources/wp-function
 
 * Download theme and place into your Wordpress install. `/wp-content/themes/`
 * or clone repo
+
+## Timber / Twig
+
+For more information and documentation, check out these resources:
+- https://github.com/jarednova/timber
+- https://github.com/jarednova/timber/wiki (In particular check out the guides, there are plenty of them!)
 
 ## Build Script Documentation
 
@@ -66,21 +73,21 @@ Master needs to be pushed to the WPE origin.
 ***
 
 ## Project Manager(s)
-* John Macklin
+* Fangorn
 
 ## Developer(s)
 
-#### Leslie Knoppe
+#### Finglas
 * Front-End
 * Content Modules
 * Blog
 
-#### Andy Dwyer
+#### Fladrif
 * Act-On Integration with Forms
 * Member Registration
 * Event Registration
 
-#### Tom Haverford
+#### Beechbone
 * ONE DAY to Feed the World
 
 ***
