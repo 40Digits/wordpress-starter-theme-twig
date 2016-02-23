@@ -20,6 +20,16 @@ add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'html5' );
 
+// Get a cleaner template name for pages - use as ID or class in your template containers
+// Called on <body> in header.php
+function get_template_name() {
+	if (is_page()) {
+		global $post;
+		return str_replace('.php', '', get_post_meta($post->ID, '_wp_page_template', true));
+	}
+	return '';
+}
+
 // Disable WP emoji
 function disable_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );

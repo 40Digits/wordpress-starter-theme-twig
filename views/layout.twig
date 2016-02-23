@@ -24,8 +24,6 @@
 
   {% include 'theme-meta.twig' %}
 
-  {% block head %}{% endblock %}
-
   {{wp_head}}
 </head>
 <body {{ function('body_class') }} id="{{ function('get_template_name') }}">
@@ -38,7 +36,7 @@
   </main>
 
   {#
-    <footer class="main-footer"></footer> 
+    <footer class="main-footer"></footer>
   #}
 
   {{wp_footer}}
