@@ -2,7 +2,7 @@
   "name": "wordpress-starter-theme",
   "version": "1.0.0",
   "description": "A starter bare-bones Wordpress theme framework.",
-  "main": "gulpfile.js",
+  "main": "_src/js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,8 +30,5 @@
     }
   ],
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-eta": "^0.4.7"
-  }
+  "devDependencies": {}
 }
